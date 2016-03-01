@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mattermost:
+    image: mattermost/platform
+    ports:
+      - "8065:80"
+  hubot:
+    build: hubot
+    image: woldan/hubot
+    ports:
+      - "8080:8080"
